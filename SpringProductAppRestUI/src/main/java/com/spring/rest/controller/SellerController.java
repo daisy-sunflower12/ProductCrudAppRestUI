@@ -44,6 +44,7 @@ public class SellerController {
 		ModelAndView mav = new ModelAndView("addProduct");
 		User userFromCookie = cookieUtil.getUserFromCookie(request);
 		System.out.println("User: " + userFromCookie);
+		System.out.println("Helloooooo");
 		if (userFromCookie == null) {
 			mav.setViewName("redirect:/");
 			return mav;
